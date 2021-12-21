@@ -29,6 +29,7 @@
         margin: 5% auto;
         border: 1px solid lightgrey;
         padding: 2% 10%;
+        box-shadow: 5px 10px 18px #888888;
     }
 
     img {
