@@ -33,7 +33,7 @@
         border-radius: 2%;
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 500px) {
         .card {
             width: 85%;
             height: 100%;
