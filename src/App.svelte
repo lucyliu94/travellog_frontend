@@ -202,5 +202,10 @@ font-family: 'Dosis', sans-serif;
 .close {
   border: none;
 }
+
+@media screen and (min-width: 375px) {
+  
+}
+
 </style>
 

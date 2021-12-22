@@ -33,6 +33,13 @@
         border-radius: 2%;
     }
 
+    @media screen and (min-width: 375px) {
+        .card {
+            width: 100%;
+        }
+  
+}
+
     .card:hover{
         border: 1px solid lightgrey;
         box-shadow: 5px 10px 18px black;
