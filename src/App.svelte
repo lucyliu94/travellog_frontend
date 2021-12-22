@@ -2,7 +2,6 @@
   import {onMount} from "svelte"
   import Display from "./components/Display.svelte"
   import Form from "./components/Form.svelte"
-  import Modal from 'svelte-simple-modal';
 
   const url = "https://travellogbackend-ll.herokuapp.com/travellogs"
 
@@ -112,6 +111,9 @@ onMount(() => { getTravellogs() })
 
 <style>
 
+*{
+  font-family: 'Roboto', sans-serif;
+}
 
 .title {
   font-family: 'Dosis', sans-serif;
@@ -126,12 +128,11 @@ onMount(() => { getTravellogs() })
 }
 
 .new-log {
+  box-shadow: 5px 5px 5px #888888;
   padding:0.35em 1.2em;
   border:0.1em solid #FFFFFF;
   margin:0 0.3em 0.3em 0;
   border-radius:0.12em;
-  box-sizing: border-box;
-  text-decoration:none;
   font-family:'Roboto',sans-serif;
   font-weight:300;
   color: black;
