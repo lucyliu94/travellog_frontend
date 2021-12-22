@@ -25,15 +25,15 @@
 
 <div>
     <form on:submit={handleSubmit}>
-        <label>Location: 
-            <input type="text" placeholder="location" bind:value={country}>
+        <label>Location 
+            <input type="text" placeholder="i.e city, country..." bind:value={country}>
         </label>
         <label>
-            Description:
-            <input type="text" bind:value={description}>
+            Description
+            <input type="text" placeholder="beautiful sceneries..." bind:value={description}>
         </label>
         <label>
-            Image Url:
+            Image Url
             <input type="text" bind:value={image}>
         </label>
        <label>
@@ -60,7 +60,6 @@ form {
     margin: 0 auto;
     width: 40%;
     padding: 30px 70px;
-    padding-bottom: 5%;
     background-color: white;
     box-shadow: 5px 5px 5px lightgrey;
 }
@@ -71,12 +70,14 @@ input {
    width: 100%;
    margin-bottom: 10px;
    margin-top: 10px;
-   text-align: left;
 }
 
 label {
-    text-align: left;
-    display: inline-block;
+    text-align: center;
+}
+
+.checkbox {
+    background-color: purple;
 }
 
 .submitlabel {

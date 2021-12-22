@@ -11,8 +11,8 @@
             <h1 class="countryName" on:click={() => select(travellog)}>{travellog.country}</h1>
             <h3>{travellog.description}
             </h3>
-            <h4>Visit Again? --> {travellog.visitAgain}</h4>
-            <button on:click={() => destroy(travellog)}>Delete</button>
+            <h4>Visit Again: {travellog.visitAgain}</h4>
+            <button class="trash" on:click={() => destroy(travellog)}>🗑️</button>
         </div>
 
         {/each}
@@ -28,7 +28,7 @@
         width: 25%;
         margin: 5% auto;
         border: 1px solid lightgrey;
-        padding: 2% 10%;
+        padding: 2% 5%;
         box-shadow: 5px 10px 18px #888888;
         border-radius: 2%;
     }
@@ -41,5 +41,17 @@
 
     img {
         width: 100%;
+        height: 30%;
+    }
+
+    .trash {
+        border: none;
+        background: white;
+    }
+
+    .trash:hover{
+        cursor: pointer;
+        transform:scale(1.5);
     }
 </style>
+

@@ -85,7 +85,9 @@ onMount(() => { getTravellogs() })
 </script>
 
 <main>
-  <h1 class="title">travlog</h1>
+  <h1 class="title">
+    trav<span>log</span>
+  </h1>
   <div class="button">
     <button class="new-log bouncy" on:click={toggleForm}>Create New Log</button>
   </div>
@@ -115,6 +117,11 @@ onMount(() => { getTravellogs() })
   font-family: 'Roboto', sans-serif;
 }
 
+span {
+color: #97BFB4;
+font-family: 'Dosis', sans-serif;
+}
+
 .title {
   font-family: 'Dosis', sans-serif;
   font-size: 5em;
@@ -141,7 +148,7 @@ onMount(() => { getTravellogs() })
 
 .new-log:hover{
   color:#000000;
-  background-color:#FFFFFF;
+  background-color:#97BFB4;
 }
 
 .bouncy{
