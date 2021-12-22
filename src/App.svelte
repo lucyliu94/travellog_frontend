@@ -145,6 +145,13 @@ font-family: 'Dosis', sans-serif;
   margin-right: 6em;
 }
 
+@media screen and (min-width: 375px) {
+  .button {
+    width: 95%;
+    margin-right: 3em;
+  }
+}
+
 .new-log {
   box-shadow: 5px 5px 5px #888888;
   padding:0.35em 1.2em;
@@ -203,9 +210,6 @@ font-family: 'Dosis', sans-serif;
   border: none;
 }
 
-@media screen and (min-width: 375px) {
-  
-}
 
 </style>
 
