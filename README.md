@@ -1,48 +1,48 @@
-# Svelte + Vite
+# Capstone (Front-end)
+## by Lucy Liu
 
-This template should help get you started developing with Svelte in Vite.
+## Explanation of App
+Finally a centralized location for you to house all your travel activities. You can filter through and see some of your favourite destinations and relive your memories! 
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## Technologies Used
+- Svelte
+- Express
+- Bootstrap
+- CSS
+- HTML
 
-## Need an official Svelte framework?
+## Libraries/Techniques
+- Front-end CRUD functionality, REST API
+- Backend API Deployment with Heroku
+- Frontend React Deployment with Vercel
+- Font-Awesome Icons
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
 
-## Technical considerations
+## Routing Table 
 
-**Why use this over SvelteKit?**
+#### Main
+| Action         | Path                        | Request   | Purpose                                                                        |
+|:--------------:|:---------------------------:|:---------:|:------------------------------------------------------------------------------:|
+| Index          | /travellogs                   | GET       | List all reminders/tasks                                                    |
+| Show           | /travellogs                  | GET       | Show details about a specific reminder                                      |
+| Edit           | /editTravellogs/:id              | PUT       | Edit the reminder's details                                                 |
+| Delete         | /travellogs                   | DELETE    | Delete the reminder                                                         |
+| Create         | /travellogs                | POST      | Create a new reminder                                                       |
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-  `vite dev` and `vite build` wouldn't work in a SvelteKit environment, for example.
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+## User Stories
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+- Users will be able to view a full list of all their travel logs once they visit the site
+- Users will be able to create, read, update, or delete their logs
+- Users can create a new log by clicking on new log to make new entries
+- Users can click on each individual entry to edit each travel log by submitting through the form
+- Users can delete by clicking on the icon to remove entry
 
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `checkJs` in the JS template?**
-
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+## Challenges
+- I originally wanted to add authentication but figuring out the icon library importation and getting used to the overall Svelte language took a bit longer than I imagined so to meet MVP I decided to leave out authentication for now.
+- I had some issues implementing a modal for the form. I opted to leave it as a form but would want it have a more 3D look going forward by implementing it as a modal
+- I thought I could link a CSS file to have one centralized place for styling but I ended up having some issues with deployment so I just used the style tags and placed my css styling there for each page. 
+- Styling issues with the form as the checkbox wouldn't align left - so I texted to align all the input and text center to make it look less odd on the screen

@@ -30,7 +30,7 @@
         </label>
         <label>
             Description
-            <input type="text" placeholder="beautiful sceneries..." bind:value={description}>
+            <input class="description" type="text" placeholder="beautiful sceneries..." bind:value={description}>
         </label>
         <label>
             Image Url
@@ -72,6 +72,10 @@ input {
    margin-top: 10px;
 }
 
+.description {
+  height: 60px;
+}
+
 label {
     text-align: center;
 }
@@ -93,6 +97,5 @@ label {
     box-shadow: 2px 2px 2px lightgrey;
     transform: scale(1.05);
 }
-
 
 </style>
