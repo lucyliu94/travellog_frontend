@@ -40,6 +40,20 @@
         }
 }
 
+@media screen and (max-width: 550px) {
+        .card {
+            width: 85%;
+            height: 100%;
+        }
+}
+
+@media screen and (max-width: 1024px) {
+        .card {
+            width: 80%;
+            height: 100%;
+        }
+}
+
     .card:hover{
         border: 1px solid lightgrey;
         box-shadow: 5px 10px 18px black;

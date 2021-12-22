@@ -152,6 +152,7 @@ font-family: 'Dosis', sans-serif;
   }
 }
 
+
 .new-log {
   box-shadow: 5px 5px 5px #888888;
   padding:0.35em 1.2em;
