@@ -24,11 +24,10 @@ Finally a centralized location for you to house all your travel activities. You 
 #### Main
 | Action         | Path                        | Request   | Purpose                                                                        |
 |:--------------:|:---------------------------:|:---------:|:------------------------------------------------------------------------------:|
-| Index          | /travellogs                   | GET       | List all reminders/tasks                                                    |
-| Show           | /travellogs                  | GET       | Show details about a specific reminder                                      |
-| Edit           | /editTravellogs/:id              | PUT       | Edit the reminder's details                                                 |
-| Delete         | /travellogs                   | DELETE    | Delete the reminder                                                         |
-| Create         | /travellogs                | POST      | Create a new reminder                                                       |
+| Index          | /travellogs                   | GET       | List all entries                                                   |
+| Edit           | /editTravellogs/:id              | PUT       | Edit the entry's detail in the form                                                |
+| Delete         | /travellogs                   | DELETE    | Delete the entry                                                        |
+| Create         | /travellogs                | POST      | Create a new entry                                                     |
 
 
 
