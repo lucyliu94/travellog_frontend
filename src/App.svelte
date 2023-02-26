@@ -4,7 +4,7 @@
   import Form from "./components/Form.svelte"
   import Modal from "./components/Modal.svelte"
 
-  const url = "https://travellog-backend-ll.onrender.com"
+  const url = "https://travellog-backend-ll.onrender.com/travellogs"
 
   // state
   let showForm = false 
